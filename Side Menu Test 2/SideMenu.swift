@@ -32,7 +32,7 @@ struct SideMenu: View {
                     VStack(alignment: .leading, spacing: 45){
                         //tabs button
                         TabButton(title: "Home", image:"Home")
-                        TabButton(title: "Profile", image:"profile")
+                        TabButton(title: "Profile", image:"Profile")
                         TabButton(title: "Map", image:"Map")
                         TabButton(title: "Court", image:"court")
                         TabButton(title: "Activity", image:"Activity")

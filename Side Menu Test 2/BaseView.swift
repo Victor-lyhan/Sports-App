@@ -48,7 +48,6 @@ struct BaseView: View {
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
                             .tag("Court")
-                        Text("Avtivity")
                         ActivityView()
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
@@ -61,7 +60,7 @@ struct BaseView: View {
                             //Tab Buttons
                             TabButton(image: "Home")
                             TabButton(image: "Map")
-                            TabButton(image: "court")
+                            TabButton(image: "Court")
                             TabButton(image: "Activity")
                         }
                         .padding([.top],20)
