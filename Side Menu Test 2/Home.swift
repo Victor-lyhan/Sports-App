@@ -47,61 +47,57 @@ struct Home: View {
     var body: some View {
         //top
         VStack{
-                HStack{
-                        Text("Sports App")
-                        .bold()
-                        .font(.system(size: 20))
-                    Image("Logo")
-                }
-            VStack(spacing:0){
-                HStack{
-                    Button{
-                        withAnimation{showMenu.toggle()}
-                    } label: {
-                        Image("Millan&Victor")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 35, height: 35)
-                            .clipShape(Circle())
-                        
-                    }
-                    Spacer()
-                }
-                .padding(.horizontal)
-                .padding(.vertical,10)
-                Divider()
-               // body
-                GeometryReader { proxy in
-                    VStack {
-                        TabView(selection: $currentIndex) {
-                            ForEach(1..<6) { num in
-                                Image("\(num)")
+                    VStack(spacing:0){
+                        HStack{
+                            Button{
+                                withAnimation{showMenu.toggle()}
+                            } label: {
+                                Image("Millan&Victor")
                                     .resizable()
-                                    .scaledToFill()
-                                    .overlay(Color.gray.opacity(0.3))
-                                    .tag(num)
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 35, height: 35)
+                                    .clipShape(Circle())
                             }
-                        }.tabViewStyle(PageTabViewStyle())
-                            .padding()
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                            .frame(width: proxy.size.width, height: proxy.size.height/3, alignment: .center)
-                            .onReceive(timer, perform: { _ in
-                                Next()
-                            })
-                        control
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.vertical,10)
+                        Divider()
                     }
+                    .overlay(
+                        HStack{
+                            Text("SportsMan")
+                                .bold()
+                                .font(.system(size: 20))
+                            Image("Logo")
+                        }
+                        
+                    )
+                    Spacer()
+            GeometryReader { proxy in
+                VStack {
+                    TabView(selection: $currentIndex) {
+                        ForEach(1..<6) { num in
+                            Image("\(num)")
+                                .resizable()
+                                .scaledToFill()
+                                .overlay(Color.gray.opacity(0.3))
+                                .tag(num)
+                        }
+                    }.tabViewStyle(PageTabViewStyle())
+                        .padding()
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .frame(width: proxy.size.width, height: proxy.size.height/3, alignment: .center)
+                        .onReceive(timer, perform: { _ in
+                            Next()
+                        })
+                    control
                 }
-                
-                
-                
-                
-                
-                
-                // body end
             }
+                }
         }
     }
-}
+
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
