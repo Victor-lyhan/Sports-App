@@ -32,7 +32,7 @@ struct SideMenu: View {
                     VStack(alignment: .leading, spacing: 45){
                         //tabs button
                         TabButton(title: "Home", image:"Home")
-                        TabButton(title: "Home", image:"Home")
+                        TabButton(title: "Profile", image:"Profile")
                         TabButton(title: "Map", image:"Map")
                         TabButton(title: "Court", image:"Court")
                         TabButton(title: "Activity", image:"Activity")
@@ -40,26 +40,6 @@ struct SideMenu: View {
                     .padding()
                     .padding(.leading)
                     .padding(.top,30)
-                    
-                    Divider()
-                    TabButton(title: "Sportsman Ads", image:"Ads")
-                        .padding()
-                        .padding(.leading)
-                        .padding(.bottom)
-                    
-                    Divider()
-                    
-                    VStack(alignment: .leading, spacing: 30){
-                        Button(" Settings And Privacy"){
-                        }
-                        Button(" Help Center"){
-                        }
-                    }
-                    .padding()
-                    .padding(.leading)
-                    .padding(.bottom)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundColor(.primary)
                 }
             }
         }
@@ -85,14 +65,19 @@ func TabButton(title: String, image: String)->some View{
     
     NavigationLink {
         if(title == "Home"){
-            Text("fart")
+            Text("Home")
         }
         else if(title == "Map"){
             MapView()
-            
+        }
+        else if(title == "Profile"){
+            Text("Profile")
+        }
+        else if(title == "Activity"){
+            Text("Activity Notebook")
         }
         else{
-            Text("awesome")
+          Text("Court")
         }
         
     } label: {
