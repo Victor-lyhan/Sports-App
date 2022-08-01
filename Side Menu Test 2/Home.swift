@@ -17,7 +17,7 @@ struct Home: View {
                     Button{
                         withAnimation{showMenu.toggle()}
                     } label: {
-                        Image("Messi")
+                        Image("Millan&Victor")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 35, height: 35)

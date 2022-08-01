@@ -17,6 +17,9 @@
 		683CFB6B289622810011734C /* LicationalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683CFB6A289622810011734C /* LicationalManager.swift */; };
 		683CFB6D2896229F0011734C /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683CFB6C2896229F0011734C /* LocationDetailView.swift */; };
 		683CFB6F289625030011734C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683CFB6E289625030011734C /* Map.swift */; };
+		6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3828982CCB00165AFF /* ActivityView.swift */; };
+		6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3A28982CE200165AFF /* AddItemview.swift */; };
+		6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3E28982D2400165AFF /* ToDoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		683CFB6A289622810011734C /* LicationalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicationalManager.swift; sourceTree = "<group>"; };
 		683CFB6C2896229F0011734C /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		683CFB6E289625030011734C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		6A8E1D3828982CCB00165AFF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		6A8E1D3A28982CE200165AFF /* AddItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemview.swift; sourceTree = "<group>"; };
+		6A8E1D3E28982D2400165AFF /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		683CFB19289394690011734C /* Side Menu Test 2 */ = {
 			isa = PBXGroup;
 			children = (
+				6A8E1D3728982C8500165AFF /* Activity View */,
 				683CFB69289622430011734C /* map */,
 				683CFB1C289394690011734C /* ContentView.swift */,
 				683CFB49289433DC0011734C /* Home.swift */,
@@ -91,6 +98,16 @@
 				683CFB6C2896229F0011734C /* LocationDetailView.swift */,
 			);
 			path = map;
+			sourceTree = "<group>";
+		};
+		6A8E1D3728982C8500165AFF /* Activity View */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E1D3828982CCB00165AFF /* ActivityView.swift */,
+				6A8E1D3A28982CE200165AFF /* AddItemview.swift */,
+				6A8E1D3E28982D2400165AFF /* ToDoList.swift */,
+			);
+			path = "Activity View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +183,11 @@
 				683CFB6F289625030011734C /* Map.swift in Sources */,
 				683CFB292893948F0011734C /* BaseView.swift in Sources */,
 				683CFB6D2896229F0011734C /* LocationDetailView.swift in Sources */,
+				6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */,
+				6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */,
 				683CFB1D289394690011734C /* ContentView.swift in Sources */,
 				683CFB4A289433DC0011734C /* Home.swift in Sources */,
+				6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */,
 				683CFB6B289622810011734C /* LicationalManager.swift in Sources */,
 				683CFB1B289394690011734C /* Side_Menu_Test_2App.swift in Sources */,
 				683CFB2B289395DF0011734C /* SideMenu.swift in Sources */,

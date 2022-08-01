@@ -13,12 +13,12 @@ struct SideMenu: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             VStack(alignment: .leading, spacing: 12){
-                Image("Messi")
+                Image("Millan&Victor")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 65, height: 65)
                     .clipShape(Circle())
-                Text("Victor Han")
+                Text("Millan and Victor")
                     .font(.title2.bold())
                 
             }
@@ -32,9 +32,9 @@ struct SideMenu: View {
                     VStack(alignment: .leading, spacing: 45){
                         //tabs button
                         TabButton(title: "Home", image:"Home")
-                        TabButton(title: "Profile", image:"Profile")
+                        TabButton(title: "Profile", image:"profile")
                         TabButton(title: "Map", image:"Map")
-                        TabButton(title: "Court", image:"Court")
+                        TabButton(title: "Court", image:"court")
                         TabButton(title: "Activity", image:"Activity")
                     }
                     .padding()
@@ -74,7 +74,7 @@ func TabButton(title: String, image: String)->some View{
             Text("Profile")
         }
         else if(title == "Activity"){
-            Text("Activity Notebook")
+            ActivityView()
         }
         else{
           Text("Court")
