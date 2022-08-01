@@ -25,7 +25,7 @@ struct BaseView: View {
         let sideBarWidth = getRect().width - 90
         
         // Whole navigation view ...
-        NavigationView{
+        NavigationView {
             
             HStack(spacing: 0) {
                 
@@ -40,9 +40,6 @@ struct BaseView: View {
                             .navigationBarHidden(true)
                             .tag("Home")
                         Text("Map")
-                        MapView()
-                            .navigationBarTitleDisplayMode(.inline)
-                            .navigationBarHidden(true)
                             .tag("Map")
                         Text("Court")
                             .navigationBarTitleDisplayMode(.inline)
@@ -52,6 +49,9 @@ struct BaseView: View {
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
                             .tag("Activity")
+                    }
+                    if currentTab == "Map" {
+                        MapView()
                     }
                     // custom tab bar...
                     VStack(spacing:0){
@@ -104,6 +104,7 @@ struct BaseView: View {
         }
     }
     
+
     @ViewBuilder
     func TabButton(image:String)->some View{
         Button{

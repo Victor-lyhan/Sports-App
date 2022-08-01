@@ -12,7 +12,6 @@ struct AddItemview: View {
     @State private var courses = ""
     @State private var description = ""
     @State private var dueDate = Date()
-    @State private var color = ""
     @Environment(\.presentationMode) var presentationMode
     static let courses = ["Running", "Tennis", "Basketball", "Soccer", "Football"]
     var body: some View {

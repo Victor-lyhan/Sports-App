@@ -20,6 +20,7 @@
 		6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3828982CCB00165AFF /* ActivityView.swift */; };
 		6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3A28982CE200165AFF /* AddItemview.swift */; };
 		6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3E28982D2400165AFF /* ToDoList.swift */; };
+		6A8E1D5D28985FA800165AFF /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D5C28985FA800165AFF /* Court.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		6A8E1D3828982CCB00165AFF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		6A8E1D3A28982CE200165AFF /* AddItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemview.swift; sourceTree = "<group>"; };
 		6A8E1D3E28982D2400165AFF /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		6A8E1D5C28985FA800165AFF /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				683CFB1C289394690011734C /* ContentView.swift */,
 				683CFB49289433DC0011734C /* Home.swift */,
 				683CFB282893948F0011734C /* BaseView.swift */,
+				6A8E1D5C28985FA800165AFF /* Court.swift */,
 				683CFB2A289395DF0011734C /* SideMenu.swift */,
 				683CFB1A289394690011734C /* Side_Menu_Test_2App.swift */,
 				683CFB1E2893946A0011734C /* Assets.xcassets */,
@@ -191,6 +194,7 @@
 				683CFB6B289622810011734C /* LicationalManager.swift in Sources */,
 				683CFB1B289394690011734C /* Side_Menu_Test_2App.swift in Sources */,
 				683CFB2B289395DF0011734C /* SideMenu.swift in Sources */,
+				6A8E1D5D28985FA800165AFF /* Court.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

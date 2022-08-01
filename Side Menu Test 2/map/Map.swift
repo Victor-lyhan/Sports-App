@@ -22,8 +22,15 @@ struct MapView: View {
     @State private var userTrackingMode:
     MapUserTrackingMode = .follow
     @State private var places = [Place]()
-    
+    @State var sportsType = ""
     var body: some View {
+        Section {
+                Picker("sports", selection: $sportsType) {
+                    Text("Soccer").tag("soccer")
+                    Text("Basketball").tag("basketball")
+                }
+        }
+                Spacer()
         NavigationView {
             Map(coordinateRegion: $region,
                 interactionModes: .all,
@@ -32,17 +39,22 @@ struct MapView: View {
                 annotationItems: places){ place in
                 MapAnnotation(coordinate: place.annotation.coordinate){
                     NavigationLink(destination: LocationDetailsView(selectedMapItem: place.mapItem)){
-                        Image("soccer")
+                        if sportsType == "soccer" {
+                            Image("soccer")
+                        }
+                        if sportsType == "basketball" {
+                            Image("basketball")
+                        }
                     }
                 }
             }
-                .onAppear(){
-                    performSearch(item: "soccer")
-                }
-                .navigationTitle("Sports Map")
-                .navigationBarTitleDisplayMode(.inline)
+                .onChange(of: sportsType, perform: { newValue in
+                     performSearch(item: sportsType)
+                 })
         }
+        Spacer()
     }
+        
     func performSearch(item: String){
         let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = item
@@ -59,7 +71,6 @@ struct MapView: View {
             }
         }
     }
-}
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
@@ -71,4 +82,5 @@ struct Place: Identifiable {
     let id = UUID()
     let annotation: MKPointAnnotation
     let mapItem: MKMapItem
+}
 }

@@ -42,7 +42,7 @@ struct ActivityView: View {
                     
                 })
             .navigationBarTitle("Add Activity",  displayMode: .inline)
-            .foregroundColor(.accentColor)
+            
             }
         }
     }
