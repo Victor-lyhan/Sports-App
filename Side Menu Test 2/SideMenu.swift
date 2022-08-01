@@ -34,7 +34,7 @@ struct SideMenu: View {
                         TabButton(title: "Home", image:"Home")
                         TabButton(title: "Profile", image:"Profile")
                         TabButton(title: "Map", image:"Map")
-                        TabButton(title: "Court", image:"court")
+                        TabButton(title: "Court", image:"Court")
                         TabButton(title: "Activity", image:"Activity")
                     }
                     .padding()
