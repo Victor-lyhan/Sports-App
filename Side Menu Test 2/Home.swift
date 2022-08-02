@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-    var numberofImages = 6
+    var numberofImages = 3
     var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     @State var currentIndex = 0
     @Binding var showMenu: Bool
