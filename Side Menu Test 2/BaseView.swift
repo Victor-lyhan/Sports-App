@@ -41,9 +41,6 @@ struct BaseView: View {
                             .tag("Home")
 
                     }
-                    if currentTab == "Map" {
-                        MapView()
-                    }
                     // custom tab bar...
                     VStack(spacing:0){
                         Divider()

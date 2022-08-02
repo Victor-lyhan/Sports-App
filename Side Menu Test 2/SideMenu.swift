@@ -41,6 +41,11 @@ struct SideMenu: View {
                     .padding(.leading)
                     .padding(.top,30)
                 }
+                Divider()
+                TabButton(title: "Help Center", image: "Help Center")
+                    .padding()
+                    .padding(.leading)
+                    .padding(.top,10)
             }
         }
         .padding(.top)
@@ -67,17 +72,21 @@ func TabButton(title: String, image: String)->some View{
         if(title == "Home"){
             Text("Home")
         }
-        else if(title == "Map"){
-            MapView()
-        }
         else if(title == "Profile"){
             Text("Profile")
+        }
+        else if(title == "Map"){
+            MapView()
         }
         else if(title == "Activity"){
             ActivityView()
         }
-        else{
+        else if(title == "Court"){
           Text("Court")
+        }
+        else {
+          Text("Help Center")
+            HelpCenterView()
         }
         
     } label: {
