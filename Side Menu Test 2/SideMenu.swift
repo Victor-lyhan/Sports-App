@@ -31,10 +31,9 @@ struct SideMenu: View {
                 VStack{
                     VStack(alignment: .leading, spacing: 45){
                         //tabs button
-                        TabButton(title: "Home", image:"Home")
                         TabButton(title: "Profile", image:"Profile")
                         TabButton(title: "Map", image:"Map")
-                        TabButton(title: "Court", image:"Court")
+                        TabButton(title: "Calorie Calc", image:"Court")
                         TabButton(title: "Activity", image:"Activity")
                     }
                     .padding()
@@ -69,9 +68,6 @@ func TabButton(title: String, image: String)->some View{
     // Simple replace button with navigation Links
     
     NavigationLink {
-        if(title == "Home"){
-            Text("Home")
-        }
         else if(title == "Profile"){
             Text("Profile")
         }
@@ -82,7 +78,7 @@ func TabButton(title: String, image: String)->some View{
             ActivityView()
         }
         else if(title == "Court"){
-          Text("Court")
+            Court()
         }
         else {
           Text("Help Center")
