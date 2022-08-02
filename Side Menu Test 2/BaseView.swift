@@ -39,16 +39,7 @@ struct BaseView: View {
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
                             .tag("Home")
-                        Text("Map")
-                            .tag("Map")
-                        Text("Court")
-                            .navigationBarTitleDisplayMode(.inline)
-                            .navigationBarHidden(true)
-                            .tag("Court")
-                        ActivityView()
-                            .navigationBarTitleDisplayMode(.inline)
-                            .navigationBarHidden(true)
-                            .tag("Activity")
+
                     }
                     if currentTab == "Map" {
                         MapView()
@@ -56,13 +47,7 @@ struct BaseView: View {
                     // custom tab bar...
                     VStack(spacing:0){
                         Divider()
-                        HStack(spacing:0){
-                            //Tab Buttons
-                            TabButton(image: "Home")
-                            TabButton(image: "Map")
-                            TabButton(image: "Court")
-                            TabButton(image: "Activity")
-                        }
+
                         .padding([.top],20)
                     }
                 }

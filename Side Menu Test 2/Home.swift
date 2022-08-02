@@ -66,7 +66,7 @@ struct Home: View {
             }
             .overlay(
                 HStack{
-                    Text("SportsMan")
+                    Text("Sports App")
                         .bold()
                         .font(.system(size: 20))
                     Image("Logo")
