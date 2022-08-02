@@ -21,7 +21,7 @@
 		6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3828982CCB00165AFF /* ActivityView.swift */; };
 		6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3A28982CE200165AFF /* AddItemview.swift */; };
 		6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3E28982D2400165AFF /* ToDoList.swift */; };
-		6A8E1D5D28985FA800165AFF /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D5C28985FA800165AFF /* Court.swift */; };
+		6A8E1D5D28985FA800165AFF /* CalorieCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D5C28985FA800165AFF /* CalorieCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		6A8E1D3828982CCB00165AFF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		6A8E1D3A28982CE200165AFF /* AddItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemview.swift; sourceTree = "<group>"; };
 		6A8E1D3E28982D2400165AFF /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
-		6A8E1D5C28985FA800165AFF /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
+		6A8E1D5C28985FA800165AFF /* CalorieCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		685AA4062898D26B002074E5 /* Court */ = {
 			isa = PBXGroup;
 			children = (
-				6A8E1D5C28985FA800165AFF /* Court.swift */,
+				6A8E1D5C28985FA800165AFF /* CalorieCounter.swift */,
 			);
 			path = Court;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				683CFB1B289394690011734C /* Side_Menu_Test_2App.swift in Sources */,
 				683CFB2B289395DF0011734C /* SideMenu.swift in Sources */,
 				685AA4092898D28F002074E5 /* HelpCenterView.swift in Sources */,
-				6A8E1D5D28985FA800165AFF /* Court.swift in Sources */,
+				6A8E1D5D28985FA800165AFF /* CalorieCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

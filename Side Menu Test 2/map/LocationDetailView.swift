@@ -20,8 +20,6 @@ struct LocationDetailsView: View {
             Text(selectedMapItem.name!)
                 .font(.title)
             Text(address)
-            Text(selectedMapItem.phoneNumber!)
-                .padding()
             Link(destination: selectedMapItem.url!) {
                 Text("Website")
                     .padding()
