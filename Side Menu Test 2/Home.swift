@@ -47,46 +47,45 @@ struct Home: View {
     var body: some View {
         //top
         VStack{
-                    VStack(spacing:0){
-                        HStack{
-                            Button{
-                                withAnimation{showMenu.toggle()}
-                            } label: {
-                                Image("Millan&Victor")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 35, height: 35)
-                                    .clipShape(Circle())
-                            }
-                            Spacer()
-                        }
-                        .padding(.horizontal)
-                        .padding(.vertical,10)
-                        Divider()
+            VStack(spacing:0){
+                HStack{
+                    Button{
+                        withAnimation{showMenu.toggle()}
+                    } label: {
+                        Image("Millan&Victor")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 35, height: 35)
+                            .clipShape(Circle())
                     }
-                    .overlay(
-                        HStack{
-                            Text("SportsMan")
-                                .bold()
-                                .font(.system(size: 20))
-                            Image("Logo")
-                        }
-                        
-                    )
                     Spacer()
+                }
+                .padding(.horizontal)
+                .padding(.vertical,10)
+                Divider()
+            }
+            .overlay(
+                HStack{
+                    Text("SportsMan")
+                        .bold()
+                        .font(.system(size: 20))
+                    Image("Logo")
+                }
+                
+            )
+            Spacer()
             GeometryReader { proxy in
                 VStack {
                     TabView(selection: $currentIndex) {
-                        ForEach(1..<6) { num in
+                        ForEach(0..<3) { num in
                             Image("\(num)")
                                 .resizable()
                                 .scaledToFill()
-                                .overlay(Color.gray.opacity(0.3))
                                 .tag(num)
                         }
                     }.tabViewStyle(PageTabViewStyle())
-                        .padding()
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .border(.black)
                         .frame(width: proxy.size.width, height: proxy.size.height/3, alignment: .center)
                         .onReceive(timer, perform: { _ in
                             Next()
@@ -94,9 +93,9 @@ struct Home: View {
                     control
                 }
             }
-                }
         }
     }
+}
 
 
 struct Home_Previews: PreviewProvider {
