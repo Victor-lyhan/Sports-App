@@ -68,7 +68,7 @@ func TabButton(title: String, image: String)->some View{
     // Simple replace button with navigation Links
     
     NavigationLink {
-        else if(title == "Profile"){
+        if(title == "Profile"){
             Text("Profile")
         }
         else if(title == "Map"){
@@ -77,7 +77,7 @@ func TabButton(title: String, image: String)->some View{
         else if(title == "Activity"){
             ActivityView()
         }
-        else if(title == "Court"){
+        else if(title == "Calorie Calc"){
             Court()
         }
         else {
