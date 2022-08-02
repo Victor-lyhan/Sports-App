@@ -18,11 +18,12 @@
 		683CFB6D2896229F0011734C /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683CFB6C2896229F0011734C /* LocationDetailView.swift */; };
 		683CFB6F289625030011734C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683CFB6E289625030011734C /* Map.swift */; };
 		685AA4092898D28F002074E5 /* HelpCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685AA4082898D28F002074E5 /* HelpCenterView.swift */; };
+		6A5A73FF2899CE8A003CBA96 /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A73FE2899CE8A003CBA96 /* Court.swift */; };
+		6A5A74012899CEB0003CBA96 /* AddItemView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A74002899CEB0003CBA96 /* AddItemView1.swift */; };
+		6A5A74032899CEC8003CBA96 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A74022899CEC8003CBA96 /* List.swift */; };
 		6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3828982CCB00165AFF /* ActivityView.swift */; };
 		6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3A28982CE200165AFF /* AddItemview.swift */; };
 		6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3E28982D2400165AFF /* ToDoList.swift */; };
-		6A8E1D5D28985FA800165AFF /* CalorieCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D5C28985FA800165AFF /* CalorieCounter.swift */; };
-		6AF5419B2899A424001A1FA6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5419A2899A424001A1FA6 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +39,12 @@
 		683CFB6C2896229F0011734C /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		683CFB6E289625030011734C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		685AA4082898D28F002074E5 /* HelpCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterView.swift; sourceTree = "<group>"; };
+		6A5A73FE2899CE8A003CBA96 /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
+		6A5A74002899CEB0003CBA96 /* AddItemView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView1.swift; sourceTree = "<group>"; };
+		6A5A74022899CEC8003CBA96 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		6A8E1D3828982CCB00165AFF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		6A8E1D3A28982CE200165AFF /* AddItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemview.swift; sourceTree = "<group>"; };
 		6A8E1D3E28982D2400165AFF /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
-		6A8E1D5C28985FA800165AFF /* CalorieCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounter.swift; sourceTree = "<group>"; };
-		6AF5419A2899A424001A1FA6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,9 @@
 		685AA4062898D26B002074E5 /* Court */ = {
 			isa = PBXGroup;
 			children = (
-				6A8E1D5C28985FA800165AFF /* CalorieCounter.swift */,
-				6AF5419A2899A424001A1FA6 /* ListView.swift */,
+				6A5A73FE2899CE8A003CBA96 /* Court.swift */,
+				6A5A74002899CEB0003CBA96 /* AddItemView1.swift */,
+				6A5A74022899CEC8003CBA96 /* List.swift */,
 			);
 			path = Court;
 			sourceTree = "<group>";
@@ -206,19 +209,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				683CFB6F289625030011734C /* Map.swift in Sources */,
+				6A5A73FF2899CE8A003CBA96 /* Court.swift in Sources */,
 				683CFB292893948F0011734C /* BaseView.swift in Sources */,
 				683CFB6D2896229F0011734C /* LocationDetailView.swift in Sources */,
 				6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */,
 				6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */,
 				683CFB1D289394690011734C /* ContentView.swift in Sources */,
+				6A5A74012899CEB0003CBA96 /* AddItemView1.swift in Sources */,
+				6A5A74032899CEC8003CBA96 /* List.swift in Sources */,
 				683CFB4A289433DC0011734C /* Home.swift in Sources */,
 				6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */,
 				683CFB6B289622810011734C /* LicationalManager.swift in Sources */,
 				683CFB1B289394690011734C /* Side_Menu_Test_2App.swift in Sources */,
-				6AF5419B2899A424001A1FA6 /* ListView.swift in Sources */,
 				683CFB2B289395DF0011734C /* SideMenu.swift in Sources */,
 				685AA4092898D28F002074E5 /* HelpCenterView.swift in Sources */,
-				6A8E1D5D28985FA800165AFF /* CalorieCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
