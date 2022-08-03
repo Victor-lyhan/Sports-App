@@ -30,6 +30,7 @@ struct SideMenu: View {
             
             ScrollView(.vertical, showsIndicators: false){
                 VStack{
+                    Divider()
                     VStack(alignment: .leading, spacing: 45){
                         //tabs button
                         TabButton(title: "Profile", image:"Profile")
