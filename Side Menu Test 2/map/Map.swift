@@ -26,11 +26,15 @@ struct MapView: View {
     var body: some View {
         Section {
             HStack{
-                Text("Sports type selection:")
+                Text(" Sports type selection:")
                 Picker("sports", selection: $sportsType) {
                         Text("Soccer").tag("soccer")
                         Text("Basketball").tag("basketball")
-                    }
+                        Text("Tennis").tag("tennis")
+                        Text("Volleyball").tag("volleyball")
+                        Text("Football").tag("football")
+                }
+                    .padding()
             }
         }
                 Spacer()
@@ -45,8 +49,17 @@ struct MapView: View {
                         if sportsType == "soccer" {
                             Image("soccer")
                         }
-                        if sportsType == "basketball" {
+                       else if sportsType == "basketball" {
                             Image("basketball")
+                        }
+                       else if sportsType == "tennis" {
+                            Image("tennis")
+                        }
+                       else if sportsType == "volleyball" {
+                            Image("volleyball")
+                        }
+                        else {
+                            Image("football")
                         }
                     }
                 }
