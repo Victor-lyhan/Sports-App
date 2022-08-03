@@ -14,13 +14,19 @@ struct Profile: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome: \(AppInfo.username)")
+                Text("Profile Settings")
                     .fontWeight(.bold)
                     .font(.title)
+                    .padding()
+                Text("Welcome: \(AppInfo.username)")
+                    .fontWeight(.bold)
+                    .font(.title3)
+                    .padding()
                 Text("Enter Your Name")
                     .fontWeight(.bold)
                 TextField("Enter Your name", text: $AppInfo.username)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(width: 150, height: 25, alignment: .center)
                     .padding()
                 Button(action: {saveData() }) {
                     Text("Save")
