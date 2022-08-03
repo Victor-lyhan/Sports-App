@@ -11,6 +11,9 @@ struct Home: View {
     var numberofImages = 3
     var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     @State var currentIndex = 0
+    @State var numberofImages1 = 5
+    var timer1 = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    @State var currentIndex1 = 3
     @Binding var showMenu: Bool
     
     func Previous() {
@@ -25,6 +28,18 @@ struct Home: View {
                 numberofImages ? currentIndex + 1 : 0
         }
     }
+    func Previous1() {
+        withAnimation {
+            currentIndex1 = currentIndex1 > 0 ?
+            currentIndex1 - 1 : numberofImages1 - 1
+        }
+    }
+    func Next1() {
+        withAnimation {
+            currentIndex1 = currentIndex1 <
+                numberofImages1 ? currentIndex1 + 1 : 7
+        }
+    }
     var control: some View {
         HStack {
             Button {
@@ -37,6 +52,24 @@ struct Home: View {
                 .frame(width: 120)
             Button {
                 Next()
+            } label: {
+                Image(systemName: "chevron.right")
+            }
+            .accentColor(.primary)
+        }
+    }
+    var control1: some View {
+        HStack {
+            Button {
+                Previous1()
+            } label: {
+                Image(systemName: "chevron.left")
+            }
+            .accentColor(.primary)
+            Spacer()
+                .frame(width: 120)
+            Button {
+                Next1()
             } label: {
                 Image(systemName: "chevron.right")
             }
@@ -74,32 +107,64 @@ struct Home: View {
                 
             )
             Spacer()
-            GeometryReader { proxy in
-                VStack {
-                    TabView(selection: $currentIndex) {
-                        ForEach(0..<3) { num in
-                            Image("\(num)")
-                                .resizable()
-                                .scaledToFill()
-                                .tag(num)
-                        }
-                    }.tabViewStyle(PageTabViewStyle())
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .border(.black)
-                        .frame(width: proxy.size.width, height: proxy.size.height/3, alignment: .center)
-                        .onReceive(timer, perform: { _ in
-                            Next()
-                        })
-                    control
+            VStack {
+                GeometryReader { proxy in
+                    VStack {
+                        TabView(selection: $currentIndex) {
+                            ForEach(0..<3) { num in
+                                Image("\(num)")
+                                    .resizable()
+                                    .frame(width: 400, height: proxy.size.height/1.5, alignment: .center)
+                                    .tag(num)
+                                    .border(.black)
+                            }
+                        }.tabViewStyle(PageTabViewStyle())
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .padding()
+                    }
+                    
                 }
+                Divider()
+                GeometryReader { proxy in
+                        VStack {
+                            TabView(selection: $currentIndex1) {
+                                ForEach(3..<5) { num in
+                                    Image("\(num)")
+                                        .resizable()
+                                        .frame(width: 400, height: proxy.size.height/1.5, alignment: .center)
+                                        .tag(num)
+                                        .border(.black)
+                                }
+                            }.tabViewStyle(PageTabViewStyle())
+                                .clipShape(RoundedRectangle(cornerRadius: 5))
+                                .padding()
+                        }
+                    }
+                Divider()
+                    GeometryReader { proxy in
+                        VStack {
+                            TabView(selection: $currentIndex1) {
+                                ForEach(5..<7) { num in
+                                    Image("\(num)")
+                                        .resizable()
+                                        .frame(width: 400, height: proxy.size.height/1.5, alignment: .center)
+                                        .tag(num)
+                                        .border(.black)
+                                }
+                            }.tabViewStyle(PageTabViewStyle())
+                                .clipShape(RoundedRectangle(cornerRadius: 5))
+                                .padding()
+                        }
+                    }
             }
         }
     }
-}
-
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    
+    
+    struct Home_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
