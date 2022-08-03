@@ -13,7 +13,7 @@ struct AddItemview: View {
     @State private var description = ""
     @State private var dueDate = Date()
     @Environment(\.presentationMode) var presentationMode
-    static let courses = ["Running", "Tennis", "Basketball", "Soccer", "Football", "Pickleball", "Others"]
+    static let courses = ["Running", "Tennis", "Basketball", "Soccer", "Football", "Pickleball", "Volleyball", "Others"]
     var body: some View {
         NavigationView {
             Form {
