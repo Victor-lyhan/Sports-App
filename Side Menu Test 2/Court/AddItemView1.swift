@@ -46,6 +46,7 @@ struct AddItemView1: View {
                     Calculate()
                     courses = activity
                 }
+                .buttonStyle(RoundedRectangleButtonStyle())
                 Text("\(finalAnswer)" + " Calories Burned")
                     .fontWeight(.bold)
                     .font(.title)
@@ -59,6 +60,7 @@ struct AddItemView1: View {
                     presentationMode.wrappedValue.dismiss()
                 }
             })
+            .accentColor(.black)
         }
     }
     func METCALC() {
@@ -83,3 +85,16 @@ struct AddItemView1_Previews: PreviewProvider {
         AddItemView1(assignmentItem1 : AssignmentItems1())
     }
 }
+struct RoundedRectangleButtonStyle: ButtonStyle {
+  func makeBody(configuration: Configuration) -> some View {
+    HStack {
+      Spacer()
+      configuration.label.foregroundColor(.white)
+      Spacer()
+    }
+    .padding()
+    .background(Color.blue.cornerRadius(8))
+    .scaleEffect(configuration.isPressed ? 0.95 : 1)
+  }
+}
+

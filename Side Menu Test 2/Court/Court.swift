@@ -19,6 +19,8 @@ struct Court: View {
                             Text("\(item.finalAnswer) Calories")
                                 .font(.headline)
                             Text(item.course)
+                                .foregroundColor(.red)
+                                .fontWeight(.bold)
                         }
                         Spacer()
                         Text(item.dueDate, style: .date)
@@ -43,6 +45,7 @@ struct Court: View {
             .navigationBarTitle("Calories Burned Log",  displayMode: .inline)
             .foregroundColor(.accentColor)
             }
+        .accentColor(.black)
         }
     }
 
