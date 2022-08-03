@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "Calorie calc.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "sportscourt.circle.fill@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

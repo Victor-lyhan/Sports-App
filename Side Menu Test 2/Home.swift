@@ -40,42 +40,7 @@ struct Home: View {
                 numberofImages1 ? currentIndex1 + 1 : 7
         }
     }
-    var control: some View {
-        HStack {
-            Button {
-                Previous()
-            } label: {
-                Image(systemName: "chevron.left")
-            }
-            .accentColor(.primary)
-            Spacer()
-                .frame(width: 120)
-            Button {
-                Next()
-            } label: {
-                Image(systemName: "chevron.right")
-            }
-            .accentColor(.primary)
-        }
-    }
-    var control1: some View {
-        HStack {
-            Button {
-                Previous1()
-            } label: {
-                Image(systemName: "chevron.left")
-            }
-            .accentColor(.primary)
-            Spacer()
-                .frame(width: 120)
-            Button {
-                Next1()
-            } label: {
-                Image(systemName: "chevron.right")
-            }
-            .accentColor(.primary)
-        }
-    }
+    
     
     var body: some View {
         //top
@@ -114,7 +79,7 @@ struct Home: View {
                             ForEach(0..<3) { num in
                                 Image("\(num)")
                                     .resizable()
-                                    .frame(width: 400, height: proxy.size.height/1.5, alignment: .center)
+                                    .frame(width: 400, height: proxy.size.height/1.1, alignment: .center)
                                     .tag(num)
                                     .border(.black)
                             }
@@ -126,36 +91,37 @@ struct Home: View {
                 }
                 Divider()
                 GeometryReader { proxy in
-                        VStack {
-                            TabView(selection: $currentIndex1) {
-                                ForEach(3..<5) { num in
-                                    Image("\(num)")
-                                        .resizable()
-                                        .frame(width: 400, height: proxy.size.height/1.5, alignment: .center)
-                                        .tag(num)
-                                        .border(.black)
-                                }
-                            }.tabViewStyle(PageTabViewStyle())
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
-                                .padding()
-                        }
+                    VStack {
+                        TabView(selection: $currentIndex1) {
+                            ForEach(3..<5) { num in
+                                Image("\(num)")
+                                    .resizable()
+                                    .frame(width: 400, height: proxy.size.height/1.1, alignment: .center)
+                                    .tag(num)
+                                    .border(.black)
+                            }
+                        }.tabViewStyle(PageTabViewStyle())
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .padding()
                     }
+                }
                 Divider()
-                    GeometryReader { proxy in
-                        VStack {
-                            TabView(selection: $currentIndex1) {
-                                ForEach(5..<7) { num in
-                                    Image("\(num)")
-                                        .resizable()
-                                        .frame(width: 400, height: proxy.size.height/1.5, alignment: .center)
-                                        .tag(num)
-                                        .border(.black)
-                                }
-                            }.tabViewStyle(PageTabViewStyle())
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
-                                .padding()
-                        }
+                GeometryReader { proxy in
+                    VStack {
+                        TabView(selection: $currentIndex1) {
+                            ForEach(5..<7) { num in
+                                Image("\(num)")
+                                    .resizable()
+                                    .frame(width: 400, height: proxy.size.height/1.1, alignment: .center)
+                                    .tag(num)
+                                    .border(.black)
+                            }
+                        }.tabViewStyle(PageTabViewStyle())
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .padding()
                     }
+                }
+                
             }
         }
     }

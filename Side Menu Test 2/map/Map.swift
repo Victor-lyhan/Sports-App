@@ -25,10 +25,13 @@ struct MapView: View {
     @State var sportsType = ""
     var body: some View {
         Section {
+            HStack{
+                Text("Sports type selection:")
                 Picker("sports", selection: $sportsType) {
-                    Text("Soccer").tag("soccer")
-                    Text("Basketball").tag("basketball")
-                }
+                        Text("Soccer").tag("soccer")
+                        Text("Basketball").tag("basketball")
+                    }
+            }
         }
                 Spacer()
         NavigationView {

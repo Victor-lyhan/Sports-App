@@ -33,7 +33,7 @@ struct SideMenu: View {
                         //tabs button
                         TabButton(title: "Profile", image:"Profile")
                         TabButton(title: "Map", image:"Map")
-                        TabButton(title: "Calorie Calc", image:"Court")
+                        TabButton(title: "Calorie Calc", image:"Calorie Calc")
                         TabButton(title: "Activity", image:"Activity")
                     }
                     .padding()
