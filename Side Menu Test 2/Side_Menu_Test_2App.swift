@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Side_Menu_Test_2App: App {
+    @StateObject var appInfo = AppInformation()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(appInfo)
         }
     }
 }

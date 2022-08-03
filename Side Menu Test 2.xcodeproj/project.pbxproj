@@ -21,6 +21,7 @@
 		6A5A73FF2899CE8A003CBA96 /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A73FE2899CE8A003CBA96 /* Court.swift */; };
 		6A5A74012899CEB0003CBA96 /* AddItemView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A74002899CEB0003CBA96 /* AddItemView1.swift */; };
 		6A5A74032899CEC8003CBA96 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A74022899CEC8003CBA96 /* List.swift */; };
+		6A5A7424289AC99E003CBA96 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A7423289AC99E003CBA96 /* Profile.swift */; };
 		6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3828982CCB00165AFF /* ActivityView.swift */; };
 		6A8E1D3B28982CE200165AFF /* AddItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3A28982CE200165AFF /* AddItemview.swift */; };
 		6A8E1D3F28982D2400165AFF /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E1D3E28982D2400165AFF /* ToDoList.swift */; };
@@ -42,6 +43,7 @@
 		6A5A73FE2899CE8A003CBA96 /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
 		6A5A74002899CEB0003CBA96 /* AddItemView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView1.swift; sourceTree = "<group>"; };
 		6A5A74022899CEC8003CBA96 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		6A5A7423289AC99E003CBA96 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		6A8E1D3828982CCB00165AFF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		6A8E1D3A28982CE200165AFF /* AddItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemview.swift; sourceTree = "<group>"; };
 		6A8E1D3E28982D2400165AFF /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		683CFB19289394690011734C /* Side Menu Test 2 */ = {
 			isa = PBXGroup;
 			children = (
+				6A5A7422289AC870003CBA96 /* Profile */,
 				685AA4072898D279002074E5 /* Help Center */,
 				685AA4062898D26B002074E5 /* Court */,
 				6A8E1D3728982C8500165AFF /* Activity View */,
@@ -126,6 +129,14 @@
 				685AA4082898D28F002074E5 /* HelpCenterView.swift */,
 			);
 			path = "Help Center";
+			sourceTree = "<group>";
+		};
+		6A5A7422289AC870003CBA96 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6A5A7423289AC99E003CBA96 /* Profile.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		6A8E1D3728982C8500165AFF /* Activity View */ = {
@@ -217,6 +228,7 @@
 				683CFB1D289394690011734C /* ContentView.swift in Sources */,
 				6A5A74012899CEB0003CBA96 /* AddItemView1.swift in Sources */,
 				6A5A74032899CEC8003CBA96 /* List.swift in Sources */,
+				6A5A7424289AC99E003CBA96 /* Profile.swift in Sources */,
 				683CFB4A289433DC0011734C /* Home.swift in Sources */,
 				6A8E1D3928982CCB00165AFF /* ActivityView.swift in Sources */,
 				683CFB6B289622810011734C /* LicationalManager.swift in Sources */,

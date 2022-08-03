@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SideMenu: View {
+    @EnvironmentObject var AppInfo : AppInformation
     @Binding var showMenu: Bool
     @State private var showingSettingView = false
     var body: some View {
@@ -18,7 +19,7 @@ struct SideMenu: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 65, height: 65)
                     .clipShape(Circle())
-                Text("Millan and Victor")
+                Text(AppInfo.savedName)
                     .font(.title2.bold())
                 
             }
@@ -69,7 +70,7 @@ func TabButton(title: String, image: String)->some View{
     
     NavigationLink {
         if(title == "Profile"){
-            Text("Profile")
+            Profile()
         }
         else if(title == "Map"){
             MapView()
