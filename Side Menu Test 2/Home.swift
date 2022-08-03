@@ -67,7 +67,8 @@ struct Home: View {
                     Text("Sports App")
                         .bold()
                         .font(.system(size: 20))
-                    Image("Logo")
+                    Image("32")
+                        .clipShape(Circle())
                 }
                 
             )
@@ -79,7 +80,8 @@ struct Home: View {
                             ForEach(0..<5) { num in
                                 Image("\(num)")
                                     .resizable()
-                                    .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
+                                    //.frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
+                                    .scaledToFit()
                                     .tag(num)
                                     .border(.black)
                             }
@@ -96,7 +98,8 @@ struct Home: View {
                             ForEach(8..<11) { num in
                                 Image("\(num)")
                                     .resizable()
-                                    .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
+                                    //.frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
+                                    .scaledToFit()
                                     .tag(num)
                                     .border(.black)
                             }
@@ -109,10 +112,11 @@ struct Home: View {
                 GeometryReader { proxy in
                     VStack {
                         TabView(selection: $currentIndex1) {
-                            ForEach(5..<7) { num in
+                            ForEach(5..<8) { num in
                                 Image("\(num)")
                                     .resizable()
-                                    .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
+                                    //.frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
+                                    .scaledToFit()
                                     .tag(num)
                                     .border(.black)
                             }
