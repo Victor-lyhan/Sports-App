@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		683CFB17289394690011734C /* Side Menu Test 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Side Menu Test 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		683CFB17289394690011734C /* Sports App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sports App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		683CFB1A289394690011734C /* Side_Menu_Test_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side_Menu_Test_2App.swift; sourceTree = "<group>"; };
 		683CFB1C289394690011734C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		683CFB1E2893946A0011734C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		683CFB0E289394690011734C = {
 			isa = PBXGroup;
 			children = (
-				683CFB19289394690011734C /* Side Menu Test 2 */,
+				683CFB19289394690011734C /* Sports App */,
 				683CFB18289394690011734C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,12 +71,12 @@
 		683CFB18289394690011734C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				683CFB17289394690011734C /* Side Menu Test 2.app */,
+				683CFB17289394690011734C /* Sports App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		683CFB19289394690011734C /* Side Menu Test 2 */ = {
+		683CFB19289394690011734C /* Sports App */ = {
 			isa = PBXGroup;
 			children = (
 				6A5A7422289AC870003CBA96 /* Profile */,
@@ -92,7 +92,7 @@
 				683CFB1E2893946A0011734C /* Assets.xcassets */,
 				683CFB202893946A0011734C /* Preview Content */,
 			);
-			path = "Side Menu Test 2";
+			path = "Sports App";
 			sourceTree = "<group>";
 		};
 		683CFB202893946A0011734C /* Preview Content */ = {
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		683CFB16289394690011734C /* Side Menu Test 2 */ = {
+		683CFB16289394690011734C /* Sports App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 683CFB252893946A0011734C /* Build configuration list for PBXNativeTarget "Side Menu Test 2" */;
+			buildConfigurationList = 683CFB252893946A0011734C /* Build configuration list for PBXNativeTarget "Sports App" */;
 			buildPhases = (
 				683CFB13289394690011734C /* Sources */,
 				683CFB14289394690011734C /* Frameworks */,
@@ -164,9 +164,9 @@
 			);
 			dependencies = (
 			);
-			name = "Side Menu Test 2";
+			name = "Sports App";
 			productName = "Side Menu Test 2";
-			productReference = 683CFB17289394690011734C /* Side Menu Test 2.app */;
+			productReference = 683CFB17289394690011734C /* Sports App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +184,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 683CFB12289394690011734C /* Build configuration list for PBXProject "Side Menu Test 2" */;
+			buildConfigurationList = 683CFB12289394690011734C /* Build configuration list for PBXProject "Sports App" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -197,7 +197,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				683CFB16289394690011734C /* Side Menu Test 2 */,
+				683CFB16289394690011734C /* Sports App */,
 			);
 		};
 /* End PBXProject section */
@@ -362,7 +362,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Side Menu Test 2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Sports App/Preview Content\"";
 				DEVELOPMENT_TEAM = 8N287G2684;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -377,7 +377,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Victorh-coding.Side-Menu-Test-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sports App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,7 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Side Menu Test 2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Sports App/Preview Content\"";
 				DEVELOPMENT_TEAM = 8N287G2684;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -406,7 +406,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Victorh-coding.Side-Menu-Test-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sports App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,7 +416,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		683CFB12289394690011734C /* Build configuration list for PBXProject "Side Menu Test 2" */ = {
+		683CFB12289394690011734C /* Build configuration list for PBXProject "Sports App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				683CFB232893946A0011734C /* Debug */,
@@ -425,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		683CFB252893946A0011734C /* Build configuration list for PBXNativeTarget "Side Menu Test 2" */ = {
+		683CFB252893946A0011734C /* Build configuration list for PBXNativeTarget "Sports App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				683CFB262893946A0011734C /* Debug */,
