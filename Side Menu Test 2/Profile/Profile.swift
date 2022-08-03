@@ -14,16 +14,22 @@ struct Profile: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("\(AppInfo.savedName)")
+                Text("Welcome: \(AppInfo.username)")
                     .fontWeight(.bold)
                     .font(.title)
-                Spacer()
                 Text("Enter Your Name")
                     .fontWeight(.bold)
                 TextField("Enter Your name", text: $AppInfo.username)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
                 Button(action: {saveData() }) {
                     Text("Save")
                 }
+                .onTapGesture {
+                    getData()
+                }
+                .buttonStyle(RoundedRectangleButtonStyle2())
+                .padding()
                 Spacer()
             }.onAppear(perform: {
                 getData()
@@ -50,3 +56,17 @@ class AppInformation: ObservableObject {
     @Published var username = ""
     @Published var savedName = ""
 }
+
+struct RoundedRectangleButtonStyle2: ButtonStyle {
+  func makeBody(configuration: Configuration) -> some View {
+    HStack {
+      Spacer()
+      configuration.label.foregroundColor(.white)
+      Spacer()
+    }
+    .padding()
+    .background(Color.blue.cornerRadius(8))
+    .scaleEffect(configuration.isPressed ? 0.95 : 1)
+  }
+}
+
