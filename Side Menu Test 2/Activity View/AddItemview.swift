@@ -23,7 +23,7 @@ struct AddItemview: View {
                     }
                 }
                 TextField("Description", text: $description)
-                DatePicker("Date of Completion", selection: $dueDate)
+                DatePicker("Date", selection: $dueDate)
             }
             .navigationBarTitle("Add New Activity", displayMode: .inline)
             .navigationBarItems(trailing: Button("Save") {

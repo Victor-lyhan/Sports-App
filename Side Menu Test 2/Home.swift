@@ -76,15 +76,15 @@ struct Home: View {
                 GeometryReader { proxy in
                     VStack {
                         TabView(selection: $currentIndex) {
-                            ForEach(0..<3) { num in
+                            ForEach(0..<5) { num in
                                 Image("\(num)")
                                     .resizable()
-                                    .frame(width: 400, height: proxy.size.height/1.1, alignment: .center)
+                                    .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .tag(num)
                                     .border(.black)
                             }
                         }.tabViewStyle(PageTabViewStyle())
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                             .padding()
                     }
                     
@@ -93,15 +93,15 @@ struct Home: View {
                 GeometryReader { proxy in
                     VStack {
                         TabView(selection: $currentIndex1) {
-                            ForEach(3..<5) { num in
+                            ForEach(8..<11) { num in
                                 Image("\(num)")
-                                    .resizable()
-                                    .frame(width: 400, height: proxy.size.height/1.1, alignment: .center)
+                                /Users/hanliyang/Desktop/Mobile Apps/App 11 Final project/Sports-App/Side Menu Test 2/BaseView.swift                          .resizable()
+                                    .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .tag(num)
                                     .border(.black)
                             }
                         }.tabViewStyle(PageTabViewStyle())
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                             .padding()
                     }
                 }
@@ -112,12 +112,12 @@ struct Home: View {
                             ForEach(5..<7) { num in
                                 Image("\(num)")
                                     .resizable()
-                                    .frame(width: 400, height: proxy.size.height/1.1, alignment: .center)
+                                    .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .tag(num)
                                     .border(.black)
                             }
                         }.tabViewStyle(PageTabViewStyle())
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                             .padding()
                     }
                 }
