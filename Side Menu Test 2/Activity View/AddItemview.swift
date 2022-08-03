@@ -29,7 +29,7 @@ struct AddItemview: View {
             .navigationBarItems(trailing: Button("Save") {
                 if courses.count > 0 && description.count > 0 {
                     let item = AssignmentItem(id: UUID(), course: courses,
-                                               description: description, dueDate: dueDate)
+                                              description: description, dueDate: dueDate)
                     assignmentItem.items.append(item)
                     presentationMode.wrappedValue.dismiss()
                 }

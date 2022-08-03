@@ -37,10 +37,10 @@ struct AddItemView1: View {
                     .padding()
                 //Picker("Activity", selection: $activity) {
                 //    Text("Basketball").tag("basketball")
-                    //    Text("Soccer").tag("soccer")
-              //  }
-              //  .pickerStyle(.segmented)
-              //  .padding()
+                //    Text("Soccer").tag("soccer")
+                //  }
+                //  .pickerStyle(.segmented)
+                //  .padding()
                 Button("Calculate") {
                     METCALC()
                     Calculate()
@@ -50,7 +50,7 @@ struct AddItemView1: View {
                 Text("\(finalAnswer)" + " Calories Burned")
                     .fontWeight(.bold)
                     .font(.title)
-                .padding()
+                    .padding()
             }
             .navigationBarTitle("Calculate Your Workout", displayMode: .inline)
             .navigationBarItems(trailing: Button("Save") {
@@ -98,15 +98,15 @@ struct AddItemView1_Previews: PreviewProvider {
     }
 }
 struct RoundedRectangleButtonStyle: ButtonStyle {
-  func makeBody(configuration: Configuration) -> some View {
-    HStack {
-      Spacer()
-      configuration.label.foregroundColor(.white)
-      Spacer()
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            Spacer()
+            configuration.label.foregroundColor(.white)
+            Spacer()
+        }
+        .padding()
+        .background(Color.blue.cornerRadius(8))
+        .scaleEffect(configuration.isPressed ? 0.95 : 1)
     }
-    .padding()
-    .background(Color.blue.cornerRadius(8))
-    .scaleEffect(configuration.isPressed ? 0.95 : 1)
-  }
 }
 

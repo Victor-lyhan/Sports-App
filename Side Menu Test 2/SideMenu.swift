@@ -83,7 +83,7 @@ func TabButton(title: String, image: String)->some View{
             Court()
         }
         else {
-          Text("Help Center")
+            Text("Help Center")
             HelpCenterView()
         }
         
@@ -98,7 +98,7 @@ func TabButton(title: String, image: String)->some View{
         .foregroundColor(.primary)
         .frame(maxWidth:.infinity, alignment: .leading)
     }
-
+    
 }
 
 struct SideMenu_Previews: PreviewProvider {

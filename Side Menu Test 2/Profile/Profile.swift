@@ -64,15 +64,15 @@ class AppInformation: ObservableObject {
 }
 
 struct RoundedRectangleButtonStyle2: ButtonStyle {
-  func makeBody(configuration: Configuration) -> some View {
-    HStack {
-      Spacer()
-      configuration.label.foregroundColor(.white)
-      Spacer()
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            Spacer()
+            configuration.label.foregroundColor(.white)
+            Spacer()
+        }
+        .padding()
+        .background(Color.blue.cornerRadius(8))
+        .scaleEffect(configuration.isPressed ? 0.95 : 1)
     }
-    .padding()
-    .background(Color.blue.cornerRadius(8))
-    .scaleEffect(configuration.isPressed ? 0.95 : 1)
-  }
 }
 

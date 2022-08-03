@@ -43,9 +43,9 @@ struct ActivityView: View {
                 })
             .navigationBarTitle("Add Activity",  displayMode: .inline)
             
-            }
         }
     }
+}
 
 struct AssignmentItem: Identifiable, Codable {
     var id = UUID()

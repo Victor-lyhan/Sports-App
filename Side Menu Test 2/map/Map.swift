@@ -28,15 +28,15 @@ struct MapView: View {
             HStack{
                 Text(" Sports type selection:")
                 Picker("sports", selection: $sportsType) {
-                        Text("Soccer").tag("soccer")
-                        Text("Basketball").tag("basketball")
-                        Text("Tennis").tag("tennis")
-                        Text("Football").tag("football")
+                    Text("Soccer").tag("soccer")
+                    Text("Basketball").tag("basketball")
+                    Text("Tennis").tag("tennis")
+                    Text("Football").tag("football")
                 }
-                    .padding()
+                .padding()
             }
         }
-                Spacer()
+        Spacer()
         NavigationView {
             Map(coordinateRegion: $region,
                 interactionModes: .all,
@@ -48,10 +48,10 @@ struct MapView: View {
                         if sportsType == "soccer" {
                             Image("soccer")
                         }
-                       else if sportsType == "basketball" {
+                        else if sportsType == "basketball" {
                             Image("basketball")
                         }
-                       else if sportsType == "tennis" {
+                        else if sportsType == "tennis" {
                             Image("tennis")
                         }
                         else {
@@ -61,12 +61,12 @@ struct MapView: View {
                 }
             }
                 .onChange(of: sportsType, perform: { newValue in
-                     performSearch(item: sportsType)
-                 })
+                    performSearch(item: sportsType)
+                })
         }
         Spacer()
     }
-        
+    
     func performSearch(item: String){
         places.removeAll()
         let searchRequest = MKLocalSearch.Request()
@@ -84,16 +84,16 @@ struct MapView: View {
             }
         }
     }
-
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
+    
+    struct MapView_Previews: PreviewProvider {
+        static var previews: some View {
+            MapView()
+        }
     }
-}
-
-struct Place: Identifiable {
-    let id = UUID()
-    let annotation: MKPointAnnotation
-    let mapItem: MKMapItem
-}
+    
+    struct Place: Identifiable {
+        let id = UUID()
+        let annotation: MKPointAnnotation
+        let mapItem: MKMapItem
+    }
 }

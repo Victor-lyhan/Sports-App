@@ -44,10 +44,10 @@ struct Court: View {
                 })
             .navigationBarTitle("Calories Burned Log",  displayMode: .inline)
             .foregroundColor(.accentColor)
-            }
-        .accentColor(.black)
         }
+        .accentColor(.black)
     }
+}
 
 struct AssignmentItem1: Identifiable, Codable {
     var id = UUID()

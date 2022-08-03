@@ -39,13 +39,13 @@ struct BaseView: View {
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
                             .tag("Home")
-
+                        
                     }
                     // custom tab bar...
                     VStack(spacing:0){
                         Divider()
-
-                        .padding([.top],20)
+                        
+                            .padding([.top],20)
                     }
                 }
                 .frame(width: getRect().width)
@@ -86,7 +86,7 @@ struct BaseView: View {
         }
     }
     
-
+    
     @ViewBuilder
     func TabButton(image:String)->some View{
         Button{
