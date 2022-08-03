@@ -95,7 +95,7 @@ struct Home: View {
                         TabView(selection: $currentIndex1) {
                             ForEach(8..<11) { num in
                                 Image("\(num)")
-                                /Users/hanliyang/Desktop/Mobile Apps/App 11 Final project/Sports-App/Side Menu Test 2/BaseView.swift                          .resizable()
+                                    .resizable()
                                     .frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .tag(num)
                                     .border(.black)

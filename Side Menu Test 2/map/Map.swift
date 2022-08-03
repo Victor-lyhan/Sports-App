@@ -31,7 +31,6 @@ struct MapView: View {
                         Text("Soccer").tag("soccer")
                         Text("Basketball").tag("basketball")
                         Text("Tennis").tag("tennis")
-                        Text("Volleyball").tag("volleyball")
                         Text("Football").tag("football")
                 }
                     .padding()
@@ -55,9 +54,6 @@ struct MapView: View {
                        else if sportsType == "tennis" {
                             Image("tennis")
                         }
-                       else if sportsType == "volleyball" {
-                            Image("volleyball")
-                        }
                         else {
                             Image("football")
                         }
@@ -72,6 +68,7 @@ struct MapView: View {
     }
         
     func performSearch(item: String){
+        places.removeAll()
         let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = item
         searchRequest.region = region
