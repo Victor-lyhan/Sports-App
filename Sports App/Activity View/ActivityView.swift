@@ -22,7 +22,11 @@ struct ActivityView: View {
                                 .accentColor(.red)
                         }
                         Spacer()
-                        Text(item.dueDate, style: .date)
+                        Text(item.date, style: .date)
+                        VStack{
+                        Text(item.startTime, style:.time)
+                        Text(item.finishTime, style: .time)
+                        }
                     }
                 }
                 .onMove { indices, newOffset in
@@ -51,7 +55,9 @@ struct AssignmentItem: Identifiable, Codable {
     var id = UUID()
     var course = String()
     var description = String()
-    var dueDate = Date()
+    var date = Date()
+    var startTime = Date()
+    var finishTime = Date()
 }
 
 struct ActivityView_Previews: PreviewProvider {
