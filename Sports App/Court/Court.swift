@@ -46,6 +46,8 @@ struct Court: View {
             .foregroundColor(.accentColor)
         }
         .accentColor(.black)
+        Text("results are not 100% accurate")
+            .font(.footnote)
     }
 }
 
