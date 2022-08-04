@@ -71,9 +71,9 @@ struct RoundedRectangleButtonStyle2: ButtonStyle {
             configuration.label.foregroundColor(.white)
             Spacer()
         }
-        .padding()
-        .background(Color.blue.cornerRadius(8))
-        .scaleEffect(configuration.isPressed ? 0.95 : 1)
+        .frame(width: 175, height: 50, alignment: .center)
+        .background(Color.green.cornerRadius(8))
+        .scaleEffect(configuration.isPressed ? 0.85 : 1)
     }
 }
 
