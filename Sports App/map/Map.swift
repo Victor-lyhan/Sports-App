@@ -34,6 +34,7 @@ struct MapView: View {
                     Text("Basketball").tag("Basketball")
                     Text("Tennis").tag("Tennis")
                     Text("Football").tag("Football")
+                    Text("Pickleball").tag("pickleball")
                 }
                 .padding()
             }
@@ -56,8 +57,11 @@ struct MapView: View {
                         else if sportsType == "Tennis" {
                             Image("tennis")
                         }
-                        else {
+                        else if sportsType == "football"{
                             Image("football")
+                        }
+                        else{
+                            Image("pickleball")
                         }
                     }
                 }
