@@ -83,7 +83,8 @@ struct Home: View {
                                     //.frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .scaledToFit()
                                     .tag(num)
-                                    .border(.black)
+                                    .border(.red)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
                             }
                         }.tabViewStyle(PageTabViewStyle())
                             .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -101,7 +102,8 @@ struct Home: View {
                                     //.frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .scaledToFit()
                                     .tag(num)
-                                    .border(.black)
+                                    .border(.purple)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
                             }
                         }.tabViewStyle(PageTabViewStyle())
                             .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -118,7 +120,8 @@ struct Home: View {
                                     //.frame(width: 350, height: proxy.size.height/1.1, alignment: .center)
                                     .scaledToFit()
                                     .tag(num)
-                                    .border(.black)
+                                    .border(.blue)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
                             }
                         }.tabViewStyle(PageTabViewStyle())
                             .clipShape(RoundedRectangle(cornerRadius: 10))

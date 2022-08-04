@@ -27,16 +27,18 @@ struct MapView: View {
         Section {
             HStack{
                 Text(" Sports type selection:")
+                    .fontWeight(.bold)
+                    .font(.body)
                 Picker("sports", selection: $sportsType) {
-                    Text("Soccer").tag("soccer")
-                    Text("Basketball").tag("basketball")
-                    Text("Tennis").tag("tennis")
-                    Text("Football").tag("football")
+                    Text("Soccer").tag("Soccer")
+                    Text("Basketball").tag("Basketball")
+                    Text("Tennis").tag("Tennis")
+                    Text("Football").tag("Football")
                 }
                 .padding()
             }
         }
-        Spacer()
+        //Spacer()
         NavigationView {
             Map(coordinateRegion: $region,
                 interactionModes: .all,
@@ -45,13 +47,13 @@ struct MapView: View {
                 annotationItems: places){ place in
                 MapAnnotation(coordinate: place.annotation.coordinate){
                     NavigationLink(destination: LocationDetailsView(selectedMapItem: place.mapItem)){
-                        if sportsType == "soccer" {
+                        if sportsType == "Soccer" {
                             Image("soccer")
                         }
-                        else if sportsType == "basketball" {
+                        else if sportsType == "Basketball" {
                             Image("basketball")
                         }
-                        else if sportsType == "tennis" {
+                        else if sportsType == "Tennis" {
                             Image("tennis")
                         }
                         else {
@@ -63,6 +65,7 @@ struct MapView: View {
                 .onChange(of: sportsType, perform: { newValue in
                     performSearch(item: sportsType)
                 })
+                .navigationTitle("\(sportsType) Map")
         }
         Spacer()
     }
