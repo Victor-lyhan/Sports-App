@@ -19,7 +19,7 @@ struct AddItemView1: View {
     @State private var metCalc = 0
     @State private var finalAnswer = 0
     @Environment(\.presentationMode) var presentationMode
-    static let courses = ["Basketball", "Soccer", "Tennis", "Football", "Other High Intensity", "Pickleball", "Other Low Intensity"]
+    static let courses = ["Basketball", "Soccer", "Tennis", "Football", "Pickleball", "Other High Intensity", "Other Low Intensity"]
     var body: some View {
         NavigationView {
             Form {
