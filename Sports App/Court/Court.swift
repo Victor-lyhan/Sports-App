@@ -46,8 +46,11 @@ struct Court: View {
             .foregroundColor(.accentColor)
         }
         .accentColor(.black)
+        HStack {
+        Image(systemName: "exclamationmark.triangle.fill")
         Text("results are not 100% accurate")
             .font(.footnote)
+        }
     }
 }
 
