@@ -19,10 +19,12 @@ struct SideMenu: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 65, height: 65)
                     .clipShape(Circle())
-                Text(AppInfo.savedName)
+                Text(AppInfo.username)
                     .font(.title2.bold())
                 
-            }
+            }.onAppear(perform: {
+                getData1()
+            })
             .padding(.horizontal)
             .padding(.leading)
             .padding(.bottom)
@@ -60,6 +62,14 @@ struct SideMenu: View {
                 .ignoresSafeArea(.container, edges: .vertical)
         )
         .frame(maxWidth:.infinity, alignment: .leading)
+    }
+    func saveData1() {
+        UserDefaults.standard.set(self.AppInfo.username, forKey: "username")
+        return
+    }
+    func getData1() {
+        AppInfo.username = UserDefaults.standard.string(forKey: "username") ?? ""
+        return
     }
 }
 

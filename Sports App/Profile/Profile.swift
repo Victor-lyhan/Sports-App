@@ -33,6 +33,7 @@ struct Profile: View {
                 }
                 .onTapGesture {
                     getData()
+                    return
                 }
                 .buttonStyle(RoundedRectangleButtonStyle2())
                 .padding()
