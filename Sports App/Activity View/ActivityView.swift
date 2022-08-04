@@ -19,13 +19,18 @@ struct ActivityView: View {
                             Text(item.course)
                                 .font(.headline)
                             Text(item.description)
-                                .accentColor(.red)
+                                .fontWeight(.bold)
+                                .foregroundColor(.green)
                         }
                         Spacer()
                         Text(item.date, style: .date)
                         VStack{
                         Text(item.startTime, style:.time)
+                                .fontWeight(.bold)
+                                .foregroundColor(.blue)
                         Text(item.finishTime, style: .time)
+                                .fontWeight(.bold)
+                                .foregroundColor(.red)
                         }
                     }
                 }

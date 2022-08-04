@@ -79,15 +79,12 @@
 		683CFB19289394690011734C /* Sports App */ = {
 			isa = PBXGroup;
 			children = (
-				6A5A7422289AC870003CBA96 /* Profile */,
+				68FCB04C289C481500A60408 /* Menu */,
 				685AA4072898D279002074E5 /* Help Center */,
+				6A5A7422289AC870003CBA96 /* Profile */,
 				685AA4062898D26B002074E5 /* Court */,
 				6A8E1D3728982C8500165AFF /* Activity View */,
 				683CFB69289622430011734C /* map */,
-				683CFB1C289394690011734C /* ContentView.swift */,
-				683CFB49289433DC0011734C /* Home.swift */,
-				683CFB282893948F0011734C /* BaseView.swift */,
-				683CFB2A289395DF0011734C /* SideMenu.swift */,
 				683CFB1A289394690011734C /* Side_Menu_Test_2App.swift */,
 				683CFB1E2893946A0011734C /* Assets.xcassets */,
 				683CFB202893946A0011734C /* Preview Content */,
@@ -129,6 +126,17 @@
 				685AA4082898D28F002074E5 /* HelpCenterView.swift */,
 			);
 			path = "Help Center";
+			sourceTree = "<group>";
+		};
+		68FCB04C289C481500A60408 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				683CFB1C289394690011734C /* ContentView.swift */,
+				683CFB49289433DC0011734C /* Home.swift */,
+				683CFB282893948F0011734C /* BaseView.swift */,
+				683CFB2A289395DF0011734C /* SideMenu.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		6A5A7422289AC870003CBA96 /* Profile */ = {

@@ -37,7 +37,7 @@ struct SideMenu: View {
                         //tabs button
                         TabButton(title: "Profile", image:"Profile")
                         TabButton(title: "Map", image:"Map")
-                        TabButton(title: "Calorie Calc", image:"Calorie Calc")
+                        TabButton(title: "Calorie Calculator", image:"Calorie Calc")
                         TabButton(title: "Activity", image:"Activity")
                     }
                     .padding()
@@ -89,7 +89,7 @@ func TabButton(title: String, image: String)->some View{
         else if(title == "Activity"){
             ActivityView()
         }
-        else if(title == "Calorie Calc"){
+        else if(title == "Calorie Calculator"){
             Court()
         }
         else {

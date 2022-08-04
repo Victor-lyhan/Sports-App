@@ -24,7 +24,6 @@ struct Profile: View {
                     .font(.title3)
                     .padding()
                 Text("Enter Your Name")
-                    .fontWeight(.bold)
                 TextField("Enter Your name", text: $AppInfo.username)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 150, height: 25, alignment: .center)

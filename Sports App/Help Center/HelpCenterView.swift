@@ -56,37 +56,37 @@ struct HelpCenterView: View {
     }
 }
 func q1() -> QuestionAnswer {
-    return .init(textOne: "Who created this APP?", textTwo: [.init(textOne: "MILLAN and VICTOR !!!")])
+    return .init(textOne: "1 Who created this APP?", textTwo: [.init(textOne: "MILLAN and VICTOR !!!")])
 }
 
 func q2() -> QuestionAnswer {
-    return .init(textOne: "When and Where was this APP made?", textTwo: [.init(textOne: "CTD 20220801-20220804 NorthWestern University Annenberg")])
+    return .init(textOne: "2 When and Where was this APP made?", textTwo: [.init(textOne: "CTD 20220801-20220804 NorthWestern University Annenberg")])
 }
 
 func q3() -> QuestionAnswer {
-    return .init(textOne: "Who is the most helpful in making this app besides the creators?", textTwo: [.init(textOne: "We are very grateful for Mr.Bredemeier's and Elise's help!")])
+    return .init(textOne: "3 Who is the most helpful in making this app besides the creators?", textTwo: [.init(textOne: "We are very grateful for Mr.Bredemeier's and Elise's help!")])
 }
 
 func q4() -> QuestionAnswer {
-    return .init(textOne: "What is the purpose of this app?", textTwo: [.init(textOne: "To help athletes keep track of their activity and plan their next activity")])
+    return .init(textOne: "4 What is the purpose of this app?", textTwo: [.init(textOne: "To help athletes keep track of their activity and plan their next activity")])
 }
 
 func q5() -> QuestionAnswer {
-    return .init(textOne: "How can I change my Username?", textTwo: [.init(textOne: "Open the sidebar menu -> Tap Profile -> Edit your Username!")])
+    return .init(textOne: "5 How can I change my Username?", textTwo: [.init(textOne: "Open the sidebar menu -> Tap Profile -> Edit your Username!")])
 }
 
 func q6() -> QuestionAnswer {
-    return .init(textOne: "How to use the Map feature?", textTwo: [.init(textOne: "Use the button on the top of the screen to select different sport fields. You can click the sign to link the website and get the direction")])
+    return .init(textOne: "6 How to use the Map feature?", textTwo: [.init(textOne: "Use the button on the top of the screen to select different sport fields. You can click the sign to link the website and get the direction")])
 }
 
 func q7() -> QuestionAnswer {
-    return .init(textOne: "How to use the Calories Calculator feature?", textTwo: [.init(textOne: "Click + to add a record. Follow the guide words. Select the sport, enter your weight, time. Press calculate button to generate your burning calories. At last, click save")])
+    return .init(textOne: "7 How to use the Calories Calculator feature?", textTwo: [.init(textOne: "Click + to add a record. Follow the guide words. Select the sport, enter your weight, time. Press calculate button to generate your burning calories. At last, click save")])
 }
 func q8() -> QuestionAnswer {
-    return .init(textOne: "How to use the Activity feature?", textTwo: [.init(textOne: "Similar as the Calories Calc feature. Go there to see the instruction!")])
+    return .init(textOne: "8 How to use the Activity feature?", textTwo: [.init(textOne: "Similar as the Calories Calc feature. Go there to see the instruction!")])
 }
 func q9() -> QuestionAnswer {
-    return .init(textOne: "Idk what a good question is", textTwo: [.init(textOne: "ill find a good answer")])
+    return .init(textOne: "9 Idk what a good question is", textTwo: [.init(textOne: "ill find a good answer")])
 }
 
 struct HelpCenterView_Previews: PreviewProvider {

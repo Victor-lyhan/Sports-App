@@ -12,12 +12,12 @@ class AssignmentItems1: ObservableObject {
         didSet {
             let encoder = JSONEncoder()
             if let encoded = try? encoder.encode(items) {
-                UserDefaults.standard.set(encoded, forKey: "data")
+                UserDefaults.standard.set(encoded, forKey: "data1")
             }
         }
     }
     init() {
-        if let items = UserDefaults.standard.data(forKey: "data") {
+        if let items = UserDefaults.standard.data(forKey: "data1") {
             let decoder = JSONDecoder()
             if let decoded = try? decoder.decode([AssignmentItem1].self, from: items) {
                 self.items = decoded

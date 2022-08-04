@@ -19,11 +19,12 @@ struct Court: View {
                             Text("\(item.finalAnswer) Calories")
                                 .font(.headline)
                             Text(item.course)
-                                .foregroundColor(.red)
+                                .foregroundColor(.green)
                                 .fontWeight(.bold)
                         }
                         Spacer()
                         Text(item.dueDate, style: .date)
+                            .foregroundColor(.primary)
                     }
                 }
                 .onMove { indices, newOffset in
@@ -45,11 +46,13 @@ struct Court: View {
             .navigationBarTitle("Calories Burned Log",  displayMode: .inline)
             .foregroundColor(.accentColor)
         }
-        .accentColor(.black)
+        .accentColor(.blue)
         HStack {
         Image(systemName: "exclamationmark.triangle.fill")
+                .foregroundColor(.orange)
         Text("results are not 100% accurate")
             .font(.footnote)
+            .foregroundColor(.orange)
         }
     }
 }
