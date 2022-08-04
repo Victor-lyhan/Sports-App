@@ -11,6 +11,7 @@ struct Profile: View {
     @EnvironmentObject var AppInfo : AppInformation
     @State var username = ""
     @State var savedName = ""
+    @State var imageName = ""
     var body: some View {
         NavigationView {
             VStack {
@@ -37,14 +38,21 @@ struct Profile: View {
                 }
                 .buttonStyle(RoundedRectangleButtonStyle2())
                 .padding()
+                Image("\(imageName)")
+                    .resizable()
+                    .frame(width: 50, height: 50, alignment: .center)
                 Spacer()
             }.onAppear(perform: {
                 getData()
             })
+            .onChange(of: AppInfo.username) { newValue in
+                imageName = ""
+            }
         }
     }
     func saveData() {
         UserDefaults.standard.set(self.AppInfo.username, forKey: "username")
+        imageName = "check"
         return
     }
     func getData() {
