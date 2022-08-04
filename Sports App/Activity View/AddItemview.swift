@@ -24,26 +24,26 @@ struct AddItemview: View {
                         Text(courses)
                     }
                 }
-                    TextField("Description", text: $description)
-                    DatePicker("Date", selection: $date)
-                    DatePicker("Start time", selection: $startTime)
-                    DatePicker("Finish time", selection: $finishTime)
+                TextField("Description", text: $description)
+                DatePicker("Date", selection: $date, displayedComponents: .date)
+                DatePicker("Start time", selection: $startTime, displayedComponents: .hourAndMinute)
+                DatePicker("Finish time", selection: $finishTime, displayedComponents: .hourAndMinute)
+                    .navigationBarTitle("Add New Activity", displayMode: .inline)
+                    .navigationBarItems(trailing: Button("Save") {
+                        if courses.count > 0 && description.count > 0 {
+                            let item = AssignmentItem(id: UUID(), course: courses,
+                                                      description: description, startTime: startTime, finishTime: finishTime)
+                            assignmentItem.items.append(item)
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                    })
             }
-            .navigationBarTitle("Add New Activity", displayMode: .inline)
-            .navigationBarItems(trailing: Button("Save") {
-                if courses.count > 0 && description.count > 0 {
-                    let item = AssignmentItem(id: UUID(), course: courses,
-                                              description: description, startTime: startTime, finishTime: finishTime)
-                    assignmentItem.items.append(item)
-                    presentationMode.wrappedValue.dismiss()
-                }
-            })
         }
     }
-}
-
-struct AddItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddItemview(assignmentItem : AssignmentItems())
+    
+    struct AddItemView_Previews: PreviewProvider {
+        static var previews: some View {
+            AddItemview(assignmentItem : AssignmentItems())
+        }
     }
 }
