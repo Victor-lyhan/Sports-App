@@ -19,7 +19,7 @@ struct AddItemView1: View {
     @State private var metCalc = 0
     @State private var finalAnswer = 0
     @Environment(\.presentationMode) var presentationMode
-    static let courses = ["Basketball", "Soccer", "Tennis", "Football", "Other High Intensity", "Other Low Intensity"]
+    static let courses = ["Basketball", "Soccer", "Tennis", "Football", "Other High Intensity", "Pickleball", "Other Low Intensity"]
     var body: some View {
         NavigationView {
             Form {
@@ -81,6 +81,9 @@ struct AddItemView1: View {
         }
         if activity == "Other Low Intensity" {
             metCalc = 3
+        }
+        if activity == "Pickleball" {
+            metCalc = 5
         }
     }
     func Calculate() {
