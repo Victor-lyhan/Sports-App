@@ -67,7 +67,7 @@ struct Home: View {
                     Text("Sports App")
                         .bold()
                         .font(.system(size: 20))
-                    Image("32")
+                    Image("Logo")
                         .clipShape(Circle())
                 }
                 
