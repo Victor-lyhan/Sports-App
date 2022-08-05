@@ -67,19 +67,19 @@ struct AddItemView1: View {
         if activity == "Basketball" {
             metCalc = 8
         }
-        if activity == "Soccer" {
+        else if activity == "Soccer" {
             metCalc = 6
         }
-        if activity == "Tennis" {
+        else if activity == "Tennis" {
             metCalc = 8
         }
-        if activity == "Football" {
+        else if activity == "Football" {
             metCalc = 5
         }
-        if activity == "Other High Intensity" {
+       else if activity == "Other High Intensity" {
             metCalc = 7
         }
-        if activity == "Other Low Intensity" {
+        else if activity == "Other Low Intensity" {
             metCalc = 3
         }
         if activity == "Pickleball" {
