@@ -57,10 +57,10 @@ struct MapView: View {
                         else if sportsType == "Tennis" {
                             Image("tennis")
                         }
-                        else if sportsType == "football"{
+                        else if sportsType == "Football"{
                             Image("football")
                         }
-                        else{
+                        else if sportsType == "pickleball"{
                             Image("pickleball")
                         }
                     }
