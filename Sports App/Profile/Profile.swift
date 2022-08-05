@@ -25,6 +25,7 @@ struct Profile: View {
                     .padding()
                 Text("Enter Your Name")
                 TextField("Enter Your name", text: $AppInfo.username)
+                    .disableAutocorrection(true)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 150, height: 25, alignment: .center)
                     .padding()
